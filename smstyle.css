@@ -52,32 +52,55 @@
 }
 
 
-/* Redesigned Footer */
+
+
+
+
+
+
+/* Gradient background and styling for the new footer */
 .new-footer {
-    background-color: #f6fbc4;
-    color: #1d3557;
+    background: linear-gradient(to right, #00c6ff, #aaa344);
+    color: white;
     text-align: center;
-    padding: 1.5rem;
-    font-size: 1rem;
-    box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.1);
-}
-
-.new-footer strong {
-    color: #457b9d;
-}
-
-
-/* Animation for floating emoji */
-@keyframes float {
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-top: 3px solid #ffffff;
+    font-size: 1.2rem;
+    position: relative;
+  }
+  
+  /* Footer text */
+  .new-footer p {
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Styling for the strategy emoji */
+  .new-footer .emoji {
+    font-size: 1.8rem;
+    margin-left: 5px;
+    animation: bounce 2s infinite;
+  }
+  
+  /* Floating animation for the emoji */
+  @keyframes bounce {
     0%, 100% { transform: translateY(0); }
-    50%      { transform: translateY(-5px); }
+    50% { transform: translateY(-5px); }
   }
   
-  /* Header emoji should float */
-  header h1 span {
-    display: inline-block;
-    font-size: 2.8rem;
-    animation: float 2s ease-in-out infinite;
+  /* Hover effect for the text */
+  .new-footer p:hover {
+    text-shadow: 0 0 8px #ffffff, 0 0 16px #ffffff;
+    color: #ffcc70;
   }
   
+  /* Highlight for the strong text */
+  .new-footer strong {
+    color: #ffcc70;
+    text-shadow: 0 0 8px #ffcc70, 0 0 16px #ffcc70;
+  }
   
