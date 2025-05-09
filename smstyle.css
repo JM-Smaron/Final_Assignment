@@ -14,7 +14,15 @@
     letter-spacing: 1.5px;
 }
 
-
+/* Floating animation for the header emoji */
+@keyframes headerFloat {
+    0%, 100% {
+      transform: translateY(0); /* Start and end position */
+    }
+    50% {
+      transform: translateY(-10px); /* Move emoji upwards by 10px */
+    }
+  }
 
 .search-bar {
     display: flex;
