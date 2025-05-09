@@ -149,31 +149,29 @@ body {
   
 
 
-
-
-
-
   #displayArea {
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 20px;
     padding: 30px;
-    flex: 1;
-  }
-  
-  .result-card {
-    background-color: #f1faee;
-    color: #1d3557;
-    padding: 20px 30px;
-    border-radius: 20px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    width: 300px;
     text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    transition: transform 0.3s ease;
-  }
-  
- 
+}
+
+.countryCard {
+    background: #e3eff4;
+    color: #111417;
+    padding: 20px;
+    border-radius: 20px;
+    width: 300px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.countryCard img.country-flag {
+    width: 100px;
+    margin: 10px 0;
+    border-radius: 10px;
+}
+
   
