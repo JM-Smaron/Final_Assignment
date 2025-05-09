@@ -1,6 +1,6 @@
 /* Redesigned Header */
 .new-header {
-    background: #1d3557;
+    background: linear-gradient(to right, #263c5b, #7971d2, #a8dadc);
     color: #f1faee;
     padding: 60px 20px 40px;
     text-align: center;
@@ -12,7 +12,14 @@
     margin-bottom: 25px;
     font-weight: 700;
     letter-spacing: 1.5px;
-}
+    transition: all 0.3s ease-in-out; /* Needed for smooth hover */
+  }
+  
+  .new-header h1:hover {
+    text-shadow: 0 0 8px #f0f6f6, 0 0 16px #e96bdd;
+    color: #0c1212;
+  }
+   
 
 /* Floating animation for the header emoji */
 @keyframes headerFloat {
