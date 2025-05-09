@@ -31,3 +31,19 @@
 .new-footer strong {
     color: #457b9d;
 }
+
+
+/* Animation for floating emoji */
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50%      { transform: translateY(-5px); }
+  }
+  
+  /* Header emoji should float */
+  header h1 span {
+    display: inline-block;
+    font-size: 2.8rem;
+    animation: float 2s ease-in-out infinite;
+  }
+  
+  
