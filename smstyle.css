@@ -56,11 +56,9 @@
 
 
 
-
-
 /* Gradient background and styling for the new footer */
 .new-footer {
-    background: linear-gradient(to right, #00c6ff, #aaa344);
+    background: linear-gradient(to right, #f93d28, #0072ff);
     color: white;
     text-align: center;
     padding: 20px;
@@ -83,13 +81,17 @@
   .new-footer .emoji {
     font-size: 1.8rem;
     margin-left: 5px;
-    animation: bounce 2s infinite;
+    animation: float 2s ease-in-out infinite; /* This will make the emoji float */
   }
   
-  /* Floating animation for the emoji */
-  @keyframes bounce {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-5px); }
+/* Floating animation for the footer emoji */
+@keyframes footerFloat {
+    0%, 100% {
+      transform: translateY(0); /* Start and end position */
+    }
+    50% {
+      transform: translateY(-10px); /* Move emoji upwards by 10px */
+    }
   }
   
   /* Hover effect for the text */
