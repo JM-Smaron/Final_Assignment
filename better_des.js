@@ -40,7 +40,7 @@ function process(data) {
             <p><strong>Currency:</strong> ${currencyDisplay}</p>
             <p><strong>Languages:</strong> ${languageList}</p>
             <p><strong>Area:</strong> ${area}</p>
-            <p><strong>Demonym:</strong> ${demonym}</p>
+            <p><strong>Resident:</strong> ${demonym}</p>
         `;
 
         display.appendChild(div);
