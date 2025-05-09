@@ -130,6 +130,15 @@ body {
 
 
 
+
+
+  /* Shared floating animation for emojis */
+.emoji {
+    display: inline-block;
+    animation: float 2s ease-in-out infinite;
+  }
+  
+  /* Float animation keyframes */
   @keyframes float {
     0%, 100% {
       transform: translateY(0);
@@ -138,4 +147,5 @@ body {
       transform: translateY(-10px);
     }
   }
+  
   
