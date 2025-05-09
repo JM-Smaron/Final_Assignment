@@ -62,6 +62,19 @@
 
 
 
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+  }
+  
+  #displayArea {
+    flex: 1;
+  }
+  
+
+
 
 
 /* Gradient background and styling for the new footer */
